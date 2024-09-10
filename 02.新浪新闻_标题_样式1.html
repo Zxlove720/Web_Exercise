@@ -1,0 +1,53 @@
+<!-- CSS引入的方式：
+                    1.行内样式：写在标签的style属性中（不推荐），只对当前的标签有效
+                    <h1 style = "xxx:xxx; xxx:xxx;"> 标题内容 </h1>
+
+                    2.内嵌样式：写在style标签中，可以写在页面的任何位置，但是通常写在head中
+                    <style> 
+                        h1 {
+                            xxx: xxx;
+                            xxx: xxx;
+                        }
+                    </style>
+
+                    3.外联样式：写在一个单独的.css文件中，需要link标签从网页中引入 
+                    <link rel = "stylesheet" href = "css文件路径">
+                    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 方式2：内嵌样式 -->
+    <!-- 颜色表示
+        1.关键字：用颜色的关键字（局限性）
+        2.RGB：（0-255, 0-255, 0-255）
+        3.十六进制：#fff，#00f  -->
+    <style>
+        h1 {
+            /*color : red;*/
+            color : rgb(77, 79, 83);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦点访谈：中国底气 新思想夯实大国粮仓</title>
+    
+</head>
+    <img src="img/news_logo.png"> 新浪政务 > 正文
+
+    <!-- 方式1：直接在标题中设置样式(不推荐) --> 
+    <!-- <h1 style = "color : red"> 焦点访谈：中国底气 新思想夯实大国粮仓 </h1> -->
+    
+    <!-- 方式3：外联样式 -->
+    <!-- <link rel = "stylesheet" href = "./css/news.css"> -->
+    
+    <h1> 焦点访谈：中国底气 新思想夯实大国粮仓 </h1>
+
+   
+
+
+    <hr>
+    2023年03月02日 21:50 央视网
+    <hr>
+
+</body>
+</html>
