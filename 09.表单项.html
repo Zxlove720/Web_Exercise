@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单项练习</title>
+    <style> 
+        div {
+            width:250px;
+            margin:auto auto;
+        }
+
+        #button {
+            width:200px;
+            margin:0% auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 表单项标签
+         表单属性：
+            <input>：表单项，通过type属性控制其输入形式
+                type的取值：
+                    
+                    text：默认值，定义单行的输入字段，可以在输入字段中输入内容
+                    password：定义密码字段，输入的内容会被隐藏
+                    radio：定义单选按钮，如：性别
+                    checkbox：定义多选按钮，提供多个选项，如：Java、Python、Cpp
+                    file：定义文件上传按钮，可以选择文件上传
+                    date/time/datetime-local：定义日期/时间/日期时间
+                    number：定义数字输入框，只能输入数字
+                    email：定义邮件输入框，只能输入邮件地址
+                    hidden：定义隐藏域，此处被隐藏
+                    submit/reset/button：定义提交/重置/可点击 的按钮
+
+            <select>：定义下拉列表，<option>定义列表项
+                
+            <textarea>：文本域
+    
+        -->
+        <form action="" method="post">
+            用户名:&nbsp;<input type="text" name="username">
+                <br><br>
+            密码:&nbsp;<input type="password" name="password">
+                <br><br>
+            性别:&nbsp;<label><input type="radio" name="gender" value="1">男</label>
+                <label><input type="radio" name="gender" value="0">女</label>
+                <br><br>
+            爱好:&nbsp;<label><input type="checkbox" name="hobby" value="1">Java</label>
+                <label><input type="checkbox" name="hobby" value="2">Python</label>
+                <label><input type="checkbox" name="hobby" value="3">CPP</label>
+                <br><br>
+            头像:&nbsp;<input type="file" name="picture"> 
+                <br><br>
+            生日:&nbsp;<input type="date" name="birthday">
+                <br><br>
+            日期时间:&nbsp;<input type="datetime-local" name="datetime">
+                <br><br>
+            邮箱:&nbsp;<input type="email" name="email">
+                <br><br>
+            年龄:&nbsp;<input type="number" name="age">
+                <br><br>
+            学历:&nbsp;<select name="degree">
+                        <option value="">--------请选择--------</option>
+                        <option value="1">-妈妈生的-</option>
+                        <option value="2">-学士-</option>
+                        <option value="3">-硕士-</option>
+                        <option value="4">-博士-</option>
+                </select>
+                <br><br>
+            其他信息:&nbsp;<textarea name="description" cols="20" rows="5"></textarea>
+                <br><br>
+            <input type="hidden" name="uid" value="1">
+
+            <!-- 表单常见的按钮 -->
+            
+            <div id="button">
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">
+                <input type="button" value="按钮">
+            </div>
+            
+        </form>
+    </div>
+
+
+</body>
+</html>
