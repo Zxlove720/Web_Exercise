@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单练习</title>
+    <style> 
+        div {
+            width:600px;
+            margin:0% auto;
+        }
+
+        #submit {
+            width:400px;
+            margin:0% auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 表单标签<form> 
+         表单属性：
+            action：表单数据提交的地址
+            method：表单提交的方式
+                get：表单数据将拼接在URL后面，类似：?username=tom&age=18，因为是拼接，所以说大小有限制
+                post：表单数据在请求体中携带，大小没有限制
+         注：所有的表单项，必须要有name属性才可以提交，否则不能
+         -->
+    
+    
+    <div>
+        <!-- 用get方式提交 -->
+        <!-- <form action="" method="get">
+            用户名:&nbsp;<input type="text" name="username">
+            <br>
+            密码:&nbsp;<input type="text" name="password">
+            <br>
+            <div id="submit">
+                <input type="submit" value="提交">
+            </div>
+            
+        </form> -->
+
+        <!-- 用post方式提交 -->
+        <form action="" method="post">
+            用户名:&nbsp;<input type="text" name="username">
+            <br>
+            密码:&nbsp;<input type="text" name="password">
+            <br>
+            <div id="submit">
+                <input type="submit" value="提交">
+            </div>
+            
+        </form>
+    </div>
+
+
+</body>
+</html>
